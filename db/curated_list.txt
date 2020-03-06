@@ -2,8 +2,8 @@
 # Edit at your own risk, for it will be overwritten if -c is used again.
 # Instead use custom_list.txt to add your own model names.
 # Comment or send a pull request to add to curated_list.txt. See #9 on GitHub.
-# Number of names: 491
-# For comparison: revision 21
+# Number of names: 493
+# For comparison: revision 22
 abbie_maley
 abby_rains
 abella_danger
@@ -314,6 +314,7 @@ little_bubblegum
 littlekitsune
 liv_wild
 liya_silver
+liz_mreow
 liza_del_sierra
 lola_fae
 lolly_small
@@ -465,6 +466,7 @@ taylor_vixen
 tera_patrick
 tessa_fowler
 tiffany_star
+tiffany_thompson
 tina_reese
 tori_black
 trillium
