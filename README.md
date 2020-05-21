@@ -15,7 +15,7 @@ $ ./pddcat
 ### USAGE
 ```
 $ ./pddcat [-h] [-i] [-l] [-s path] [-d path] [-w] [-ts path] [-td path]
-              [-c] [-a name [name ...]]
+           [-c] [-a name [name ...]]
 
 Organise your all-in-one porn download directory into separate directories by model names.
 
@@ -24,8 +24,9 @@ optional arguments:
   -i, --info            print currently set src/dest directories and exit. can
                         be combined with -w, -ts, -td to display paths with
                         modifiers. terminates the program nonetheless
-  -l, --symlink         create symlinks/shortcuts after moving in the source
-                        directory
+  -l, --symlink         create symlinks/shortcuts after moving, in the source
+                        directory. needs command line to be run as admin on
+                        windows for symlink privileges
 
 config options:
   -s path, --source path
@@ -61,7 +62,8 @@ You can comment new names to [topic #9](https://github.com/kittenparry/pddcat/is
  * `~/dwn/bryci_youtube_playlist/` --> `~/arch/bryci/bryci_youtube_playlist/`
  * Meaning into their separate directories based on name.
  * `~/dwn/18.02.25.Lana.Rhoades.And.Jade.Nile.XXX.1080p/` --> `~/arch/lana_rhoades/18.02.25.Lana.Rhoades.And.Jade.Nile.XXX.1080p/`
-   * `lana_rhoades` is longer than `jade_nile` in character length and gets checked, matched & moved to first. If using `-l/--symlink` option, second model's !TODO:
+   * `lana_rhoades` is longer than `jade_nile` in character length and gets checked, matched & moved to first.
+   * If using `-l/--symlink` option, a symlink to the content will be put into second or third... model's directory, partially solving #4.
 
 ### NOTES
 An uncorrectable shortcoming is it can't tell the difference between models with different names, for example `Nadya Nabakova` and `Bunny Colby` are the same person with different names/aliases. Depending on the file/directory name, it will put them into separate directories.

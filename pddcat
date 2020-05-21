@@ -52,7 +52,6 @@ CONF_CONT = '# src=path/to/src\n# dest=path/to/dest\n# Tilde (~) could be used i
 
 # symlinks toggle
 SYMS = False
-SYMS_MULTI = False
 
 # ---
 # START
@@ -66,10 +65,7 @@ def start():
 		help='print currently set src/dest directories and exit. can be combined with -w, -ts, -td to display paths with modifiers. terminates the program nonetheless',
 		action='store_true')
 	parser.add_argument('-l', '--symlink',
-		help='create symlinks/shortcuts after moving in the source directory. can not be combined with -m',
-		action='store_true')
-	parser.add_argument('-m', '--multi-only',
-		help='create symlinks for multiple model content only. can not be combined with -l',
+		help='create symlinks/shortcuts after moving, in the source directory. needs command line to be run as admin on windows for symlink privileges',
 		action='store_true')
 
 	group_config = parser.add_argument_group('config options')
@@ -104,14 +100,8 @@ def start():
 	if args.symlink:
 		global SYMS
 		SYMS = args.symlink
-	elif args.multi_only:
-		global SYMS_MULTI
-		SYMS_MULTI = args.multi_only
-	if args.symlink and args.multi_only:
-		print('%sERROR%s: -l & -m can not be combined with each other. Terminating...' % (COL.FAIL, COL.ENDC))
-		sys.exit(1)
 
-	if len(sys.argv) == 1 or (len(sys.argv) == 2 and args.symlink) or (len(sys.argv) == 2 and args.multi_only):
+	if len(sys.argv) == 1 or (len(sys.argv) == 2 and args.symlink):
 		check_and_move()
 	else:
 		if args.working_dir and args.temp_src:
@@ -387,15 +377,15 @@ def move_dirs():
 					dir_or_file = 'ELSE??'
 
 				if dir_or_file == 'ELSE??':
-					print('%sWARNING%s: Multiple model directories/files only get moved to one directory\n%sUnless%s using -l\--symlink option.' % (COL.WARNING, COL.ENDC, COL.UNDERLINE, COL.ENDC))
+					print('%sWARNING%s: Multiple model directories/files only get moved to one directory\n%sUnless%s using -l/--symlink option.' % (COL.WARNING, COL.ENDC, COL.UNDERLINE, COL.ENDC))
 					continue
 				print('Moving %s: %s.' % (dir_or_file, down))
 				try:
 					# turn regex back to normal directory names
 					tag = tag.replace('[\. _-]*', '_')
-					global SYMS
 					os.makedirs(os.path.join(DEST_DIR, tag), exist_ok=True)
 					shutil.move(full_path, os.path.join(DEST_DIR, tag, down))
+					global SYMS
 					if SYMS:
 						os.symlink(os.path.join(DEST_DIR, tag, down), full_path)
 				except Exception as e:
