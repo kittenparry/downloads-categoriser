@@ -50,6 +50,9 @@ class COL:
 CONF_CONT = '# src=path/to/src\n# dest=path/to/dest\n# Tilde (~) could be used instead of absolute path to home.\n' \
 	'# Check --help to set up from command line\nsrc=%s\ndest=%s\n'
 
+# symlinks toggle
+SYMS = False
+
 # ---
 # START
 # ---
@@ -60,6 +63,9 @@ def start():
 	parser = argparse.ArgumentParser(description='Organise your all-in-one porn download directory into separate directories by model names.')
 	parser.add_argument('-i', '--info',
 		help='print currently set src/dest directories and exit. can be combined with -w, -ts, -td to display paths with modifiers. terminates the program nonetheless',
+		action='store_true')
+	parser.add_argument('-l', '--symlink',
+		help='create symlinks/shortcuts after moving, in the source directory. needs command line to be run as admin on windows for symlink privileges',
 		action='store_true')
 
 	group_config = parser.add_argument_group('config options')
@@ -91,7 +97,11 @@ def start():
 
 	args = parser.parse_args()
 	read_conf()
-	if len(sys.argv) == 1:
+	if args.symlink:
+		global SYMS
+		SYMS = args.symlink
+
+	if len(sys.argv) == 1 or (len(sys.argv) == 2 and args.symlink):
 		check_and_move()
 	else:
 		if args.working_dir and args.temp_src:
@@ -357,7 +367,9 @@ def move_dirs():
 			for down in match:
 				num_of_mv += 1
 				full_path = os.path.join(DWN_DIR, down)
-				if os.path.isdir(full_path):
+				if os.path.islink(full_path):
+					dir_or_file = 'SYMLINK'
+				elif os.path.isdir(full_path):
 					dir_or_file = 'DIR'
 				elif os.path.isfile(full_path):
 					dir_or_file = 'FILE'
@@ -365,8 +377,7 @@ def move_dirs():
 					dir_or_file = 'ELSE??'
 
 				if dir_or_file == 'ELSE??':
-					print('%sWARNING%s: Multiple model directories/files only get moved to one directory.' \
-						' See issue #4 on GitHub.' % (COL.WARNING, COL.ENDC))
+					print('%sWARNING%s: Multiple model directories/files only get moved to one directory\n%sUnless%s using -l/--symlink option.' % (COL.WARNING, COL.ENDC, COL.UNDERLINE, COL.ENDC))
 					continue
 				print('Moving %s: %s.' % (dir_or_file, down))
 				try:
@@ -374,6 +385,9 @@ def move_dirs():
 					tag = tag.replace('[\. _-]*', '_')
 					os.makedirs(os.path.join(DEST_DIR, tag), exist_ok=True)
 					shutil.move(full_path, os.path.join(DEST_DIR, tag, down))
+					global SYMS
+					if SYMS:
+						os.symlink(os.path.join(DEST_DIR, tag, down), full_path)
 				except Exception as e:
 					prn_gen_err(e)
 
