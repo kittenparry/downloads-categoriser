@@ -379,15 +379,24 @@ def move_dirs():
 				if dir_or_file == 'ELSE??':
 					print('%sWARNING%s: Multiple model directories/files only get moved to one directory\n%sUnless%s using -l/--symlink option.' % (COL.WARNING, COL.ENDC, COL.UNDERLINE, COL.ENDC))
 					continue
-				print('Moving %s: %s.' % (dir_or_file, down))
 				try:
 					# turn regex back to normal directory names
 					tag = tag.replace('[\. _-]*', '_')
+					full_dest = os.path.join(DEST_DIR, tag, down)
 					os.makedirs(os.path.join(DEST_DIR, tag), exist_ok=True)
-					shutil.move(full_path, os.path.join(DEST_DIR, tag, down))
+					# check if destination directory exists already, evading moving duplicate content directories inside directories with same names (#30)
+					if os.path.isdir(full_dest):
+						continue
+					shutil.move(full_path, os.path.join(full_dest))
+					print('Moving %s: %s.' % (dir_or_file, down))
 					global SYMS
 					if SYMS:
-						os.symlink(os.path.join(DEST_DIR, tag, down), full_path)
+						os.symlink(os.path.join(full_dest), full_path)
+				except FileExistsError as e:
+					# silence FileExistsError: [WinError 183] Cannot create a file when that file already exists: $path -> $path
+					# if symlink, else won't even produce an error for whatever reason
+					if dir_or_file == 'SYMLINK':
+						pass
 				except Exception as e:
 					prn_gen_err(e)
 
