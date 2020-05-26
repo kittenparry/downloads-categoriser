@@ -63,7 +63,7 @@ You can comment new names to [topic #9](https://github.com/kittenparry/pddcat/is
  * Meaning into their separate directories based on name.
  * `~/dwn/18.02.25.Lana.Rhoades.And.Jade.Nile.XXX.1080p/` --> `~/arch/lana_rhoades/18.02.25.Lana.Rhoades.And.Jade.Nile.XXX.1080p/`
    * `lana_rhoades` is longer than `jade_nile` in character length and gets checked, matched & moved to first.
-   * If using `-l/--symlink` option, a symlink to the content will be put into second or third... model's directory, partially solving #4.
+   * If using `-l/--symlink` option, a symlink to the content will be put into second or third... model's directory, partially solving [issue #4](https://github.com/kittenparry/pddcat/issues/4).
 
 ### NOTES
 An uncorrectable shortcoming is it can't tell the difference between models with different names, for example `Nadya Nabakova` and `Bunny Colby` are the same person with different names/aliases. Depending on the file/directory name, it will put them into separate directories.
