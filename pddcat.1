@@ -1,5 +1,5 @@
 .
-.TH pddcat 1 "2019-11-19" "pddcat(1)" "pddcat man page"
+.TH pddcat 1 "2020-05-29" "pddcat(1)" "pddcat man page"
 
 .SH NAME
 pddcat \- porn download directory categoriser
@@ -8,6 +8,7 @@ pddcat \- porn download directory categoriser
 .B pddcat
 .RB [ \-\-help ]
 .RB [ \-\-info ]
+.RB [ \-\-symlink ]
 .RB [ \-\-source
 .IR path ]
 .RB [ \-\-dest
@@ -41,6 +42,9 @@ Show help message and exit.
 .TP
 \fB\-i\fR, \fB\-\-info\fR
 Print currently set source/destination directories and exit. Can be combined with -w, -ts, -td options to display modified paths. Terminates the program nonetheless.
+.TP
+\fB\-l\fR, \fB\-\-symlink\fR
+Create symlinks/shortcuts in the source directory, after moving the content. If the content contains multiple models, it will place the content into the directory of the model with the longest name and place symlink(s) to that path from the directories of other starring models, along with the source directory. Needs command line to be run as admin on Windows for symlink privileges.
 
 .SS CONFIG
 .TP

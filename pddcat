@@ -60,7 +60,7 @@ SYMS = False
 def start():
 	create_custom_list()
 
-	parser = argparse.ArgumentParser(description='Organise your all-in-one porn download directory into separate directories by model names.')
+	parser = argparse.ArgumentParser(description='Organise your all-in-one porn download directory into separate directories by model names. Check the manual page for more help (man pddcat).')
 	parser.add_argument('-i', '--info',
 		help='print currently set src/dest directories and exit. can be combined with -w, -ts, -td to display paths with modifiers. terminates the program nonetheless',
 		action='store_true')
