@@ -2,8 +2,9 @@
 # Edit at your own risk, for it will be overwritten if -c is used again.
 # Instead use custom_list.txt to add your own model names.
 # Comment or send a pull request to add to curated_list.txt. See #9 on GitHub.
-# Number of names: 504
-# For comparison: revision 24
+# Number of names: 518
+# For comparison: revision 25
+aaliyah_hadid
 abbie_maley
 abby_rains
 abella_danger
@@ -57,10 +58,12 @@ annbarby
 annika_eve
 anny_aurora
 anri_okita
+anya_ivy
 anya_olsen
 aphrodesia
 april_oneil
 april_reid
+aria_banks
 aria_giovanni
 aria_lee
 ariana_marie
@@ -121,12 +124,14 @@ caprice
 carolina_sweets
 casey_calvert
 casey_norhman
+catalina_ossa
 cece_september
 cecilia_lion
 celestia_vega
 chanel_preston
 chanel_shortcake
 charley_s
+charlie_red
 charlotte_springer
 chase_ryder
 chelsea_vegas
@@ -157,6 +162,7 @@ elise_tails
 eliza_ibarra
 ella_hughes
 ella_milano
+ella_reese
 ellie_eilish
 elsa_jean
 emelia_paige
@@ -207,6 +213,7 @@ holly_gibbons
 hope_harper
 hylia
 indigowhite
+isabella_deltore
 ivi_rein
 ivy_lebelle
 iwia
@@ -225,10 +232,10 @@ jasmine_james
 jay_taylor
 jaye_summers
 jeff_milton
-jeniffer_white
 jenna_ross
 jennifer_ann
 jennifer_jacobs
+jennifer_white
 jenny_james
 jenny_taborda
 jess_davies
@@ -251,6 +258,7 @@ juicy_mel
 juliya_c
 jynx_maze
 kagney_karter
+kaisa_nord
 kali_roses
 kalinka_fox
 karlie_montana
@@ -267,6 +275,7 @@ kendra_sunderland
 kenna_james
 kiittenymph
 kimber_day
+kira_noir
 kira_sinn
 kira_thorn
 kittenxx
@@ -291,6 +300,7 @@ lana_carter
 lana_lopez
 lana_rain
 lana_rhoades
+lana_roy
 lanie_morgan
 lanna_carter
 lara_brookes
@@ -408,6 +418,7 @@ olivia_sin
 omgcosplay
 paisley_porter
 pamela_morrison
+paris_amour
 penelope_cum
 penelope_reed
 penny_pax
@@ -445,7 +456,9 @@ sarah_mcdonald
 sarah_vandella
 sasha_foxxx
 savannah_sixx
+scarlett_bloom
 scarlett_mae
+scarlit_scandal
 serena_santos
 shayla
 shelley_rae
@@ -488,6 +501,7 @@ valerie_vixen
 vera_bliss
 verababy
 verabambi
+veronica_vain
 veronica_vice
 veruca_james
 vicki_chase
