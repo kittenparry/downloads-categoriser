@@ -3,7 +3,7 @@
 # Instead use custom_list.txt to add your own model names.
 # Comment or send a pull request to add to curated_list.txt. See #9 on GitHub.
 # Number of names: 518
-# For comparison: revision 25
+# For comparison: revision 26
 aaliyah_hadid
 abbie_maley
 abby_rains
@@ -213,7 +213,7 @@ holly_gibbons
 hope_harper
 hylia
 indigowhite
-isabella_deltore
+isabelle_deltore
 ivi_rein
 ivy_lebelle
 iwia
