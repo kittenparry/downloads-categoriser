@@ -386,6 +386,7 @@ def move_dirs():
 					os.makedirs(os.path.join(DEST_DIR, tag), exist_ok=True)
 					# check if destination directory exists already, evading moving duplicate content directories inside directories with same names (#30)
 					if os.path.isdir(full_dest):
+						print('%sWARNING%s: %s directory already exists at destination. Not moved.' % (COL.WARNING, COL.ENDC, down))
 						continue
 					shutil.move(full_path, os.path.join(full_dest))
 					print('Moving %s: %s.' % (dir_or_file, down))
