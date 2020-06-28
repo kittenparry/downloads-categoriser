@@ -2,9 +2,10 @@
 # Edit at your own risk, for it will be overwritten if -c is used again.
 # Instead use custom_list.txt to add your own model names.
 # Comment or send a pull request to add to curated_list.txt. See #9 on GitHub.
-# Number of names: 527
-# For comparison: revision 28
+# Number of names: 541
+# For comparison: revision 29
 aaliyah_hadid
+abbey_brooks
 abbie_maley
 abby_rains
 abella_danger
@@ -25,6 +26,7 @@ alex_grey
 alex_mae
 alex_tanner
 alexa_flexy
+alexa_grace
 alexa_rydell
 alexis_adams
 alexis_crystal
@@ -86,10 +88,12 @@ athena_rayne
 aubrey_star
 audrey_bitoni
 audrey_miles
+august_ames
 aurora_winters
 austin_white
 autumn_falls
 autumn_riley
+ava_addams
 ava_dalush
 avery_stone
 baby_girl666
@@ -104,6 +108,7 @@ black_angelika
 blair_williams
 blazefyre
 bleu
+brandi_love
 bree_daniels
 brenna_sparks
 brett_rossi
@@ -234,6 +239,7 @@ jay_taylor
 jaye_summers
 jeff_milton
 jenna_ross
+jenni_lee
 jennifer_ann
 jennifer_jacobs
 jennifer_white
@@ -266,6 +272,7 @@ kalinka_fox
 karlie_montana
 katana_kombat
 kate_rich
+katie_banks
 katie_morgan
 kato
 katrina_jade
@@ -321,6 +328,7 @@ leslietopulos
 lexi_belle
 lexi_lore
 lexi_luna
+lexi_swallow
 li_moon
 liara_roux
 liilyrouse
@@ -331,6 +339,7 @@ lilu_moon
 lily_moon
 lindsay_marie
 lindsey_cruz
+lisa_ann
 little_bubblegum
 littlekitsune
 liv_wild
@@ -372,6 +381,7 @@ melissa_benz
 melissa_debling
 melissa_e
 melissa_lauren
+melissa_may
 mellisa_clarke
 melody_marks
 mercedes_carrera
@@ -416,6 +426,7 @@ niece_waidhofer
 nikita_bellucci
 nikki_benz
 nikki_rhodes
+nikki_sims
 nina_skye
 noelle_easton
 octavia_may
@@ -429,6 +440,7 @@ paris_amour
 penelope_cum
 penelope_reed
 penny_pax
+peta_jensen
 petitemarie
 piper_perri
 plum
@@ -444,6 +456,7 @@ rebecca_volpetti
 red_fox
 remy_lacroix
 ricki_raxxx
+rikki_six
 riley_reid
 rina_ellis
 rincity
@@ -525,6 +538,7 @@ virtualgeisha
 whitney_wright
 winter_jade
 yhivi
+yurizan_beltran
 zoe_bloom
 zoe_doll
 zoe_parker
