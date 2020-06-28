@@ -1,0 +1,26 @@
+import urllib.request
+
+# testing a way to prevent the case below
+# so to check revisions before writing file to disk
+# and it will say something like already up to date (revision 29)
+
+# Curated list has been downloaded to ~/.config/pddcat/curated_list.txt
+# Revision 29 -> 29
+# Number of names 541 -> 541 (+0)   
+
+LIST_URL = 'https://raw.githubusercontent.com/kittenparry/pddcat/master/db/curated_list.txt'
+
+def get_opener():
+	"""Set request user-agent."""
+	opener = urllib.request.build_opener()
+	opener.addheaders = [('User-agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36')]
+	urllib.request.install_opener(opener)
+
+if __name__ == '__main__':
+	get_opener()
+	file = urllib.request.urlopen(LIST_URL)
+
+	for line in file:
+		decoded_line = line.decode('utf-8')
+		if decoded_line.startswith('#'):
+			print(decoded_line.strip('\n'))
