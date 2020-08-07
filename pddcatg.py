@@ -1,7 +1,8 @@
 import sys
 import pddcat as pdd
 
-from PySide2.QtWidgets import QApplication, QWidget, QLabel, QHBoxLayout, QVBoxLayout, QGroupBox, QPushButton, QPlainTextEdit, QGroupBox, QCheckBox, QLineEdit, QBoxLayout
+from PySide2.QtWidgets import QApplication, QWidget, QLabel, QHBoxLayout, QVBoxLayout, QGroupBox, QPushButton,\
+	QPlainTextEdit, QGroupBox, QCheckBox, QLineEdit, QBoxLayout, QFileDialog
 
 # GUI extension of pddcat using PySide2
 # run the following command before launching pddcatg
@@ -33,15 +34,19 @@ class Window(QWidget):
 		self.src_label = QLabel('Source:')
 		self.src_input = QLineEdit('')
 		self.src_input.setPlaceholderText('src')
+		self.src_btn = QPushButton('...')
 		src_box.addWidget(self.src_label)
 		src_box.addWidget(self.src_input)
+		src_box.addWidget(self.src_btn)
 
 		dst_box = QHBoxLayout()
 		self.dst_label = QLabel('Destination:')
 		self.dst_input = QLineEdit('')
 		self.dst_input.setPlaceholderText('dst')
+		self.dst_btn = QPushButton('...')
 		dst_box.addWidget(self.dst_label)
 		dst_box.addWidget(self.dst_input)
+		dst_box.addWidget(self.dst_btn)
 
 		names_box = QHBoxLayout()
 		self.names_input = QLineEdit()
@@ -73,6 +78,10 @@ class Window(QWidget):
 		main_box.addWidget(self.group)
 		self.setLayout(main_box)
 
+		self.src_btn.clicked.connect(self.get_path)
+
+	def get_path(self):
+		print(QFileDialog.getExistingDirectory(self, 'Select Directory'))
 
 if __name__ == '__main__':
 	app = QApplication(sys.argv)
