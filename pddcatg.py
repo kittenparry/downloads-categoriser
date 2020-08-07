@@ -12,13 +12,13 @@ class Window(QWidget):
 		super().__init__()
 
 		self.setWindowTitle('pddcatg: Porn Download Directory Categoriser GUI')
-		self.setGeometry(200, 200, 600, 480)
+		self.setGeometry(200, 200, 350, 500)
 
 		self.create_layout()
 		self.show()
 
 	def create_layout(self):
-		main_hbox = QHBoxLayout()
+		main_box = QVBoxLayout()
 
 		self.console = QPlainTextEdit()
 		self.console.setReadOnly(True)
@@ -69,9 +69,9 @@ class Window(QWidget):
 		group_vbox.addLayout(final_box)
 		self.group.setLayout(group_vbox)
 
-		main_hbox.addWidget(self.console)
-		main_hbox.addWidget(self.group)
-		self.setLayout(main_hbox)
+		main_box.addWidget(self.console)
+		main_box.addWidget(self.group)
+		self.setLayout(main_box)
 
 
 if __name__ == '__main__':
