@@ -1,4 +1,5 @@
 import sys
+import os
 import pddcat as pdd
 
 from PySide2.QtWidgets import QApplication, QWidget, QLabel, QHBoxLayout, QVBoxLayout, QGroupBox, QPushButton,\
@@ -78,10 +79,27 @@ class Window(QWidget):
 		main_box.addWidget(self.group)
 		self.setLayout(main_box)
 
-		self.src_btn.clicked.connect(self.get_path)
+		self.src_btn.clicked.connect(self.get_src_path)
+		self.dst_btn.clicked.connect(self.get_dst_path)
 
-	def get_path(self):
-		print(QFileDialog.getExistingDirectory(self, 'Select Directory'))
+	# TODO: also set it in pddcat.conf
+	# and read from there as a start
+	def get_src_path(self):
+		self.src_input.setText(self.get_path(self.src_input.text()))
+
+	def get_dst_path(self):
+		self.dst_input.setText(self.get_path(self.dst_input.text()))
+
+	def get_path(self, path):
+		add = ''
+		if path:
+			add = path
+		# use os.path.abspath() to turn into Windows paths
+		text = os.path.abspath(QFileDialog.getExistingDirectory(self, 'Select Directory', add))
+		if text:
+			return text
+		return add
+
 
 if __name__ == '__main__':
 	app = QApplication(sys.argv)
