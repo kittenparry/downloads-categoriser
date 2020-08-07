@@ -19,6 +19,13 @@ class Window(QWidget):
 		self.create_layout()
 		self.show()
 
+		self.initial_pdd()
+
+	def initial_pdd(self):
+		pdd.read_conf()
+		self.src_input.setText(pdd.DWN_DIR)
+		self.dst_input.setText(pdd.DEST_DIR)
+
 	def create_layout(self):
 		main_box = QVBoxLayout()
 
@@ -95,10 +102,10 @@ class Window(QWidget):
 		if path:
 			add = path
 		# use os.path.abspath() to turn into Windows paths
-		text = os.path.abspath(QFileDialog.getExistingDirectory(self, 'Select Directory', add))
+		text = QFileDialog.getExistingDirectory(self, 'Select Directory', add)
 		if text:
-			return text
-		return add
+			return os.path.abspath(text)
+		return os.path.abspath(add)
 
 
 if __name__ == '__main__':
