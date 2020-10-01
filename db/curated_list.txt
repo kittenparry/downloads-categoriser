@@ -2,8 +2,8 @@
 # Edit at your own risk, for it will be overwritten if -c is used again.
 # Instead use custom_list.txt to add your own model names.
 # Comment or send a pull request to add to curated_list.txt. See #9 on GitHub.
-# Number of names: 541
-# For comparison: revision 29
+# Number of names: 561
+# For comparison: revision 30
 aaliyah_hadid
 abbey_brooks
 abbie_maley
@@ -17,6 +17,7 @@ aidra_fox
 aisha_choco
 aj_applegate
 alaina_dawson
+alecia_fox
 aleksa_nicole
 alessa_savage
 alex_arabella
@@ -95,10 +96,12 @@ autumn_falls
 autumn_riley
 ava_addams
 ava_dalush
+ava_sparxxx
 avery_stone
 baby_girl666
 baby_nicols
 babyjinx
+bailey_base
 barbarasexappel
 bella_claire
 bella_jane
@@ -151,6 +154,7 @@ crissy_moran
 cutie_chan
 daisy_haze
 daisy_summers
+dakota_skye
 dani_daniels
 danica_dillon
 daniel_sea
@@ -159,7 +163,9 @@ danni_dawn
 danni_rivers
 darcie_dolce
 davina_davis
+delilah_day
 disharmonica
+dolly_little
 dylann_vox
 eden_sin
 elektra_rose
@@ -184,6 +190,7 @@ erin_ashford
 eugenia_dior
 eva_elfie
 eva_lovia
+evelin_stone
 evilyn_fierce
 fay
 fishball
@@ -210,12 +217,14 @@ hannah_hays
 harmony_wonder
 hayden_ryan
 hazel_moore
+heather_night
 heidi_romanova
 helen_g
 helly_von_valentine
 hippy_mia
 hollie_sparrow
 holly_gibbons
+holly_michaels
 hope_harper
 hylia
 indigowhite
@@ -247,6 +256,7 @@ jenny_james
 jenny_taborda
 jess_davies
 jessa_rhodes
+jessae_rosae
 jessica_clements
 jessica_jaymes
 jessica_lincoln
@@ -302,6 +312,7 @@ kyler_quinn
 kylie_cole
 kylie_page
 kylie_quinn
+kylie_rocket
 la_sirena
 lacey_lenix
 lacy_lennon
@@ -332,6 +343,7 @@ lexi_swallow
 li_moon
 liara_roux
 liilyrouse
+lilian_stone
 lilith_lust
 lilliane
 lilneko
@@ -360,6 +372,7 @@ luna_daniels
 luna_rival
 mackenzie_moss
 macy_meadows
+maddy_may
 madelyn_marie
 madison_ivy
 madison_scott
@@ -434,6 +447,7 @@ okay_google
 olive_glass
 olivia_sin
 omgcosplay
+opal_essex
 paisley_porter
 pamela_morrison
 paris_amour
@@ -447,6 +461,7 @@ plum
 prestine_edge
 priya_rai
 pumpkinspice
+purple_bitch
 putri
 quinn_wilde
 rae_lil_black
@@ -479,7 +494,9 @@ savannah_sixx
 scarlett_bloom
 scarlett_mae
 scarlit_scandal
+september_reign
 serena_santos
+shae_summers
 shayla
 shelley_rae
 sinderella
@@ -490,9 +507,12 @@ skylar_vox
 sloan_harper
 snowyrose
 sofi_ryan
+sofi_smile
 sofie_reyez
 sophia_blake
 sophia_leone
+sophie_limma
+staci_carr
 stacy_cruz
 stefania_ferrario
 stella_cox
