@@ -2,8 +2,8 @@
 # Edit at your own risk, for it will be overwritten if -c is used again.
 # Instead use custom_list.txt to add your own model names.
 # Comment or send a pull request to add to curated_list.txt. See #9 on GitHub.
-# Number of names: 561
-# For comparison: revision 30
+# Number of names: 576
+# For comparison: revision 31
 aaliyah_hadid
 abbey_brooks
 abbie_maley
@@ -40,6 +40,7 @@ alix_lynx
 alli_rae
 allie_haze
 ally_breelsen
+alona_bloom
 alyce_anderson
 alyssa_cole
 alyssa_reece
@@ -62,6 +63,7 @@ annika_eve
 anny_aurora
 anri_okita
 anya_ivy
+anya_krey
 anya_olsen
 aphrodesia
 april_oneil
@@ -109,6 +111,7 @@ belle_delphine
 billie_star
 black_angelika
 blair_williams
+blake_blossom
 blazefyre
 bleu
 brandi_love
@@ -242,6 +245,7 @@ jade_nile
 jana_fox
 jane_wilde
 janice_griffith
+jasmin_luv
 jasmine_jae
 jasmine_james
 jay_taylor
@@ -263,6 +267,7 @@ jessica_lincoln
 jessica_lou
 jessica_nigri
 jessica_robbin
+jessica_starling
 jessie_saint
 jessika_jinx
 jia_lissa
@@ -356,6 +361,7 @@ little_bubblegum
 littlekitsune
 liv_wild
 liya_silver
+liz_jordan
 liz_mreow
 liza_del_sierra
 lola_fae
@@ -379,6 +385,7 @@ madison_scott
 maitland_ward
 malena_fendi
 malena_morgan
+malina_mars
 mandy_muse
 marina_woods
 marsha_may
@@ -396,6 +403,7 @@ melissa_e
 melissa_lauren
 melissa_may
 mellisa_clarke
+melody_foxx
 melody_marks
 mercedes_carrera
 mey_bala
@@ -410,6 +418,7 @@ michele_james
 michelle_can
 mila_azul
 misha_cross
+misha_mynx
 missalice18
 missbanana
 missprincesskay
@@ -445,11 +454,13 @@ noelle_easton
 octavia_may
 okay_google
 olive_glass
+olivia_cassi
 olivia_sin
 omgcosplay
 opal_essex
 paisley_porter
 pamela_morrison
+paola_hard
 paris_amour
 penelope_cum
 penelope_reed
@@ -481,6 +492,7 @@ romi_rain
 rufina_t
 sadie_holmes
 sageness
+sally_squirt
 samantha_saint
 sami_white
 sandy_summers
@@ -495,6 +507,7 @@ scarlett_bloom
 scarlett_mae
 scarlit_scandal
 september_reign
+sera_ryder
 serena_santos
 shae_summers
 shayla
@@ -509,6 +522,7 @@ snowyrose
 sofi_ryan
 sofi_smile
 sofie_reyez
+solazola
 sophia_blake
 sophia_leone
 sophie_limma
@@ -535,6 +549,7 @@ tiffany_thompson
 tina_reese
 tori_black
 trillium
+trinity_st_clair
 tweetney
 usatame
 valentina_nappi
